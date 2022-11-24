@@ -1,0 +1,22 @@
+/* Import FontAwesome */ 
+@import 'node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Import Bootrap scss */
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+/* Import Font Lato */
+@import 'node_modules/@fountsource/lato/300.css';
+@import 'node_modules/@fountsource/lato/400.css';
+@import 'node_modules/@fountsource/lato/700.css';
+@import 'node_modules/@fountsource/lato/900.css';
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container-custom {
+  width: 90%;
+  max-width: 1144px;
+}
