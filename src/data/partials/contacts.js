@@ -1,12 +1,11 @@
+/* Company contacts and information */
+
 export default {
 
   open: {
-    className: clock
-
-
+    className: clock,
+    text: 'Open Hours: Mon - Sat - 9:00 - 18:00'
   },
-
-
 
   contact: [
     {
@@ -22,6 +21,7 @@ export default {
       text: 'Main Avenue, 987'
     }
   ],
+  
   social: [
     {
       className: 'facebook-f',

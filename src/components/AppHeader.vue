@@ -1,8 +1,17 @@
 <script>
 
+/* Import components: Announcement */
+import Announcement from './partials/Announcement.vue';
+
 export default {
 
-  name:'AppHeader'
+  name:'AppHeader',
+
+  components: {
+
+    Announcement
+
+  }
 
 }
 
@@ -10,7 +19,13 @@ export default {
 
 <template>
 
-  <header>Header</header>
+  <header>
+
+    <!-- You can add or remove Announcement and you can edit the data in contact.js -->
+    <Announcement/>
+
+
+  </header>
   
 </template>
 
