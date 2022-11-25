@@ -25,6 +25,11 @@ export default {
 
   <AppHeader/>
 
+  <button class="btn btn-primary text-white">primary</button>
+  <button class="btn btn-outline-primary">secdbhkeb</button>
+  
+  
+
   <AppMain/>
 
   <AppFooter/>

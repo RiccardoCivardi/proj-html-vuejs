@@ -1,4 +1,4 @@
-/* All menus */
+/* Header and Footer menus */
 
 export default {
 
@@ -34,24 +34,6 @@ export default {
       isActive: false
     }
   ],
-
-  contacts: {
-    text: 'A functional HTML Template for Corporate & Business',
-    menu: [
-      {
-        name: 'phone',
-        text: '+1(305)1234-5678'
-      },
-      {
-        name: 'envelope',
-        text: 'hello@example.com'
-      },
-      {
-        name: 'location-dot',
-        text: 'Main Avenue, 987'
-      }
-    ]
-  },
 
   footer: {
 
@@ -146,6 +128,6 @@ export default {
     } 
 
   }
-  
+
 }
 

@@ -1,3 +1,7 @@
+/* Import Bootstrap functions*/
+@import 'node_modules/bootstrap/scss/functions';
+
+
 /*** Palette ***/
 
 /* Color Cube */
@@ -25,3 +29,29 @@ $elf-greeb: #078282;
 $limed-spruce: #3d4955;
 $di-serria: #dc945c;
 
+/* Custum color */
+$custom-blue: #21333F;
+
+
+/***** App colors *****/
+
+/* Color (bg) from light to dark*/
+
+$bg-100: $white;
+$bg-200: $black-haze;
+$bg-300: $custom-blue;
+$bg-400: $woodsmoke;
+$bg-500: darken($woodsmoke, 2%);
+$grey: tint-color($edward, 30%);
+$dark-grey: tint-color($edward, 15%);
+
+
+/*** Main color (greens) ***/
+/* edit variables Bootstrap*/
+$primary: $elm;
+/***********/
+$light-primary: tint-color($primary, 65%);
+$shiny-primary: tint-color($primary, 5%);
+$dark-primary: shade-color($primary, 10%);
+
+$bg-600: $dark-grey;
