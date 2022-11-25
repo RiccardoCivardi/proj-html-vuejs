@@ -27,17 +27,11 @@ export default {
 
 <template>
 
-  <div v-if="size === 'small'" class="logo-small">
+  <a :class="{'logo-small': size === 'small', 'logo-big': size === 'big'}" href="#">
 
-    <span v-for="n in contacts.nameCompany" :key="n">{{n}}</span>
+    <span v-for="n in contacts.logoCompany.name" :key="n">{{n}}</span>
 
-  </div>
-
-  <div v-else-if="size === 'big'" class="logo-big">
-
-    <span v-for="n in contacts.nameCompany" :key="n">{{n}}</span>
-
-  </div>
+  </a>
   
 </template>
 

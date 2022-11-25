@@ -3,10 +3,13 @@
 export default {
 
   /* Name company for print two colors logo */
-  nameCompany: [
-    'nex',
-    'gen'
-  ],
+  logoCompany: {
+    logoLink: '#',
+    name: [
+      'nex',
+      'gen'
+    ]
+  },
 
   open: {
     className: 'clock',

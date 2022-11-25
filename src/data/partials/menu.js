@@ -6,7 +6,7 @@ export default {
     {
       text: 'Home',
       href: '#',
-      isActive: false
+      isActive: true
     },
     {
       text: 'About',

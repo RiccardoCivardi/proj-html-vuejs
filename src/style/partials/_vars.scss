@@ -56,3 +56,8 @@ $shiny-primary: tint-color($primary, 5%);
 $dark-primary: shade-color($primary, 10%);
 
 $bg-600: $dark-grey;
+
+/*******************************************/
+
+/* Bootstrap dropdown*/
+$dropdown-min-width: 250px;
