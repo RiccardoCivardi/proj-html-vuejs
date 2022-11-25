@@ -3,25 +3,28 @@
 export default {
 
   open: {
-    className: clock,
+    className: 'clock',
     text: 'Open Hours: Mon - Sat - 9:00 - 18:00'
   },
 
   contact: [
     {
       className: 'phone',
-      text: '+1(305)1234-5678'
+      text: '+1(305)1234-5678',
+      href: '#'
     },
     {
       className: 'envelope',
-      text: 'hello@example.com'
+      text: 'hello@example.com',
+      href: '#'
     },
     {
       className: 'location-dot',
-      text: 'Main Avenue, 987'
+      text: 'Main Avenue, 987',
+      href: '#'
     }
   ],
-  
+
   social: [
     {
       className: 'facebook-f',
