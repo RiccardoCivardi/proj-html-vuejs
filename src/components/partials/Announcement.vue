@@ -64,6 +64,7 @@ export default {
 
 <style lang="scss" scoped>
 
+/* Import vars */
 @use '../../style/partials/vars' as *;
 
 .announcement-wrapper {

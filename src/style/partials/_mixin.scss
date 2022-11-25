@@ -1,0 +1,52 @@
+/* Import vars */
+@use './vars' as *;
+
+
+/*Logo  */
+@mixin logo($type: 'small') {
+
+  span {
+    display: inline-block;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    &:first-child{
+      color: $shiny-primary;
+      padding: 0.5rem 0 0.5rem 2rem;
+    }
+  }
+
+  /* small for light background */
+  @if $type == 'small' {
+    span{
+      font-weight: 700;
+      font-size: 1.3rem;
+      &:first-child {
+        background-color: $light-primary;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+      &:last-child {
+        color: $bg-300;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  /* big for dark background */
+  @else if $type =='big' {
+    span{
+      font-weight: 900;
+      font-size: 1.6rem;
+      &:first-child {
+        background-color: rgba($primary, .4);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+      &:last-child {
+        color: $grey;
+        margin-left: 4px;
+      }
+    }
+  }
+
+}

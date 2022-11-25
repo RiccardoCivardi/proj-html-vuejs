@@ -2,6 +2,12 @@
 
 export default {
 
+  /* Name company for print two colors logo */
+  nameCompany: [
+    'nex',
+    'gen'
+  ],
+
   open: {
     className: 'clock',
     text: 'Open Hours: Mon - Sat - 9:00 - 18:00'
