@@ -31,10 +31,10 @@ export default {
           <h2 class="mb-4">Excellence in <span>Services</span></h2>
 
           <div class="row">
-            <div class="col-10">
+            <div class="col-9">
               <p class="mb-4">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals.These are some options that you can hire.</p>
             </div>
-            <div class="col-1">
+            <div class="col-6 col-md-3">
               <a href="#" class="button btn btn-primary">See All</a>
             </div>
           </div>
@@ -89,9 +89,7 @@ export default {
     }
   }
   .button {
-    width: 100%;
-    color: $bg-100;
-    text-transform: uppercase;
+   @include button(solid);
   }
   h4{
     font-weight: 700;
