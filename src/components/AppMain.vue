@@ -1,6 +1,7 @@
 <script>
 
-/* Import components: */
+/* Import components: AboutNetwork */
+import AboutNetwork from './partials/AboutNetwork.vue'
 
 
 export default {
@@ -9,7 +10,7 @@ export default {
 
   components: {
 
-   
+    AboutNetwork
 
   }
 
@@ -20,6 +21,8 @@ export default {
 <template>
 
   <main>
+
+    <AboutNetwork/>
 
     
 

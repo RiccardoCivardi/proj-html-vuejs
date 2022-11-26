@@ -99,9 +99,6 @@ export default {
     }
   }
 
-  
-  
-
 }
 
 </style>

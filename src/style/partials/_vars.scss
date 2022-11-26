@@ -54,6 +54,7 @@ $primary: $elm;
 $light-primary: tint-color($primary, 65%);
 $shiny-primary: tint-color($primary, 5%);
 $dark-primary: shade-color($primary, 10%);
+$dark-rgba-primary: rgba($dark-primary, 0.25);
 
 $bg-600: $dark-grey;
 
