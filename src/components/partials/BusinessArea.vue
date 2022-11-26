@@ -1,16 +1,25 @@
 <script>
 
 /* Import data */
-import aboutNetwork from '../../data/partials/aboutNetwork';
+import businessArea from '../../data/partials/businessArea';
+
+/* Import componets: BussinessCard */
+import BusinessCard from './BusinessCard.vue'
 
 export default {
 
   name: 'BusinessArea',
 
+  components: {
+
+    BusinessCard
+
+  },
+
   data(){
     return{
 
-      aboutNetwork
+      businessArea
 
     }
   }
@@ -31,31 +40,23 @@ export default {
           <h2 class="mb-4">Excellence in <span>Services</span></h2>
 
           <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-md-9">
               <p class="mb-4">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals.These are some options that you can hire.</p>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-4 col-md-3 text-md-end">
               <a href="#" class="button btn btn-primary">See All</a>
             </div>
           </div>
 
         </div>
 
-        <div class="col-12 col-md-6 pt-5">
-          
-          <div class="row g-4">
+        <div class="row row-cols-1 g-4 row-cols-md-2 row-cols-lg-3">
 
-            <div v-for="(feature, index) in aboutNetwork.features" :key="index" class="col-12 col-md-6">
-              <div class="mb-3 d-flex align-items-center">
-                <i class="fa-solid me-2" :class="`fa-${feature.className}`"></i>
-                <h4>{{feature.title}}</h4>
-              </div>
-              <p>{{feature.text}}</p>
-            </div>
-
-          </div>
+          <BusinessCard v-for="(item, index) in businessArea" :key="index" :item="item"/>
 
         </div>
+
+       
 
       </div>
     </div>
@@ -88,21 +89,13 @@ export default {
       @include title(dark);
     }
   }
+  p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: $bg-300;
+  }
   .button {
    @include button(solid);
-  }
-  h4{
-    font-weight: 700;
-    margin-bottom: 0;
-  }
-  p:not(.subtitle) {
-    color: $bg-300;
-    font-weight: 300;
-    font-size: 1.1rem;
-  }
-  i {
-    font-size: 1.2rem;
-    color: $shiny-primary;
   }
 }
 

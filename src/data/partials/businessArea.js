@@ -6,31 +6,31 @@ export default [
     href: '#'
   },
   {
-    className: 'network-wired',
+    className: 'briefcase',
     title: 'Financial Advisory',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore.',
     href: '#'
   },
   {
-    className: 'network-wired',
+    className: 'chart-simple',
     title: 'Analytics and M&A',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore.',
     href: '#'
   },
   {
-    className: 'network-wired',
+    className: 'plane',
     title: 'Middle Marketing',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore.',
     href: '#'
   },
   {
-    className: 'network-wired',
+    className: 'globe',
     title: 'Legal Consulting',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore.',
     href: '#'
   },
   {
-    className: 'network-wired',
+    className: 'inbox',
     title: 'Regulatory Risk',
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolore.',
     href: '#'
