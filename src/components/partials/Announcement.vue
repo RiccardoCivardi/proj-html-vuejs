@@ -24,7 +24,7 @@ export default {
 <template>
 
   <div class="announcement-wrapper">
-    <div class="container-xl">
+    <div class="container-xl mx-auto">
       <div class="row d-flex justify-content-between">
 
         <!-- 0pening time -->

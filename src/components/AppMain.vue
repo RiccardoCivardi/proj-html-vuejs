@@ -1,8 +1,17 @@
 <script>
 
+/* Import components: */
+
+
 export default {
 
-  name:'AppMain'
+  name:'AppMain',
+
+  components: {
+
+   
+
+  }
 
 }
 
@@ -10,7 +19,13 @@ export default {
 
 <template>
 
-  <main>Main</main>
+  <main>
+
+    
+
+
+
+  </main>
   
 </template>
 
