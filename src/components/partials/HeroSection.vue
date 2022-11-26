@@ -40,12 +40,9 @@ export default {
           </select>
         </div>
 
-        <div class="col-5 col-md-4 ">
-          <button type="submit" class="btn btn-primary w-100">Get in touch</button>
-        </div>
-
-        <div class="col-5 col-md-4">
-          <button class="btn btn-outline-primary w-100">Read more</button>
+        <div class="col-12 ">
+          <button type="submit" class="btn btn-primary me-3">Get in touch</button>
+          <a class="btn btn-outline-primary">Read more</a>
         </div>
 
       </form>
@@ -60,6 +57,8 @@ export default {
 
 /* Import vars */
 @use '../../style/partials/vars' as *;
+/* Import mixin */
+@use '../../style/partials/mixin' as *;
 
 .container-xl {
   height: $hero-height;
@@ -93,11 +92,12 @@ export default {
     font-weight: 300;
   }
   button {
-    text-transform: uppercase;
-    &[type=submit] {
-      color: $bg-100;
-    }
+    @include button(solid);
   }
+  a{
+    @include button(outline);
+  }
+  
 
 }
 

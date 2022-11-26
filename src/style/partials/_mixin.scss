@@ -61,3 +61,23 @@
   background-color: $dark-rgba-primary;
   }
 }
+
+/* Button */
+@mixin button($type: 'outline'){
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 8px 20px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+  @if $type=='solid' {
+    color: $bg-100;
+  }
+
+  @else if $type=='outline'{
+    &:hover{
+      color: $bg-300;
+    }
+  }
+
+}

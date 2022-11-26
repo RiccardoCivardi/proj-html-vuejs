@@ -5,7 +5,7 @@ import aboutNetwork from '../../data/partials/aboutNetwork';
 
 export default {
 
-  name: 'AboutNetwork',
+  name: 'BusinessArea',
 
   data(){
     return{
@@ -25,13 +25,19 @@ export default {
     <div class="container-xl">
       <div class="row">
 
-        <div class="col-12 col-md-6">
+        <div class="col-12">
 
-          <p class="subtitle mb-3">About the network</p>
-          <h2 class="mb-3"><span>The</span> Company</h2>
+          <p class="subtitle mb-4">Our business areas</p>
+          <h2 class="mb-4">Excellence in <span>Services</span></h2>
 
-          <p class="mb-3">{{aboutNetwork.text1}}</p>
-          <p class="mb-3">{{aboutNetwork.text2}}</p>
+          <div class="row">
+            <div class="col-10">
+              <p class="mb-4">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals.These are some options that you can hire.</p>
+            </div>
+            <div class="col-1">
+              <a href="#" class="button btn btn-primary">See All</a>
+            </div>
+          </div>
 
         </div>
 
@@ -66,29 +72,33 @@ export default {
 
 .section-wrapper{
   padding: 130px 0;
-  background-color: $bg-400;
+  background-color: $bg-200;
   .subtitle {
     font-weight: 700;
     color: $shiny-primary;
     text-transform: uppercase;
     font-size: 0.9rem;
   }
-  h2, h4 {
-    color: $bg-100;
-  }
-  h2{
+  h2 {
+    color: $bg-300;
     font-weight: 900;
     font-size: 2.8rem;
     & > span {
+      color: $primary;
       @include title(dark);
     }
+  }
+  .button {
+    width: 100%;
+    color: $bg-100;
+    text-transform: uppercase;
   }
   h4{
     font-weight: 700;
     margin-bottom: 0;
   }
   p:not(.subtitle) {
-    color: $grey;
+    color: $bg-300;
     font-weight: 300;
     font-size: 1.1rem;
   }
