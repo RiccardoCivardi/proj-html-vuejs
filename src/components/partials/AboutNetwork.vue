@@ -42,7 +42,7 @@ export default {
             <div v-for="(feature, index) in aboutNetwork.features" :key="index" class="col-12 col-md-6">
               <div class="mb-3 d-flex align-items-center">
                 <i class="fa-solid me-2" :class="`fa-${feature.className}`"></i>
-                <h4>{{feature.title}}</h4>
+                <h4 class="mb-0">{{feature.title}}</h4>
               </div>
               <p>{{feature.text}}</p>
             </div>
@@ -65,32 +65,18 @@ export default {
 @use '../../style/partials/mixin' as *;
 
 .section-wrapper{
-  padding: 130px 0;
-  background-color: $bg-400;
+  @include section(dark);
   .subtitle {
-    font-weight: 700;
-    color: $shiny-primary;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-  }
-  h2, h4 {
-    color: $bg-100;
+    @include subtitle;
   }
   h2{
-    font-weight: 900;
-    font-size: 2.8rem;
-    & > span {
-      @include title(dark);
-    }
+    @include title(light);
   }
   h4{
-    font-weight: 700;
-    margin-bottom: 0;
+    @include titleSmall(light);
   }
   p:not(.subtitle) {
-    color: $grey;
-    font-weight: 300;
-    font-size: 1.1rem;
+    @include paragraph(light);
   }
   i {
     font-size: 1.2rem;

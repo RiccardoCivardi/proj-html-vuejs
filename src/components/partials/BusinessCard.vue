@@ -17,7 +17,7 @@ export default {
 <template>
 
   <div class="col">
-    <div class="card rounded-3 p-5">
+    <div class="card p-5">
       <div class="d-flex justify-content-between mb-4">
         <i class="main-i fa-solid" :class="`fa-${item.className}`"></i>
         <a :href="item.href">
@@ -35,10 +35,11 @@ export default {
 
 /* Import vars */
 @use '../../style/partials/vars' as *;
+/* Import mixin */
+@use '../../style/partials/mixin' as *;
 
 .card {
-  background-color: $bg-100;
-  border-color: $bg-100;
+  @include card(light);
   .main-i {
     font-size: 2.3rem;
     color: $primary;
@@ -49,13 +50,10 @@ export default {
     font-weight: 700;
   }
   h4 {
-    font-weight: 700;
-    color: $bg-300;
+   @include titleSmall(dark);
   }
   p {
-    color: $bg-300;
-    font-size: 1.1rem;
-    font-weight: 300;
+    @include paragraph(dark);
   }
 }
 

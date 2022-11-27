@@ -56,8 +56,6 @@ export default {
 
         </div>
 
-       
-
       </div>
     </div>
   </section>
@@ -75,24 +73,14 @@ export default {
   padding: 130px 0;
   background-color: $bg-200;
   .subtitle {
-    font-weight: 700;
-    color: $shiny-primary;
-    text-transform: uppercase;
-    font-size: 0.9rem;
+    @include subtitle;
   }
-  h2 {
-    color: $bg-300;
-    font-weight: 900;
-    font-size: 2.8rem;
-    & > span {
-      color: $primary;
-      @include title(dark);
-    }
+  h2{
+    @include title(dark);
   }
+  
   p{
-    font-size: 1.1rem;
-    font-weight: 300;
-    color: $bg-300;
+    @include paragraph(dark);
   }
   .button {
    @include button(solid);

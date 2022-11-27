@@ -51,14 +51,60 @@
 
 }
 
+/* Section Wrapper */
+@mixin section($type: 'dark') {
+  padding: 130px 0;
+
+  @if $type== 'light' {
+
+  }
+
+  @else if $type== 'dark' {
+    background-color: $bg-400;
+  }
+}
+
 /* Bg text light green title */
-@mixin title($type: 'dark') {
+@mixin boxTitle($type: 'dark') {
   display: inline-block;
   padding: 5px 15px;
   border-radius: 3px;
 
   @if $type== 'dark' {
   background-color: $dark-rgba-primary;
+  }
+}
+
+@mixin title($type: 'dark') {
+  font-weight: 900;
+  font-size: 2.8rem;
+  & > span {
+    @include boxTitle(dark);
+  }
+
+  @if $type=='light' {
+    color: $bg-100
+  }
+
+  @else if $type=='dark' {
+    color: $bg-300;
+    & > span {
+      color: $primary;
+    }
+  }
+}
+
+@mixin titleSmall($type: 'dark') {
+  
+  @if $type=='light' {
+    color: $bg-100;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  @else if $type=='dark' {
+    font-weight: 700;
+    color: $bg-300;
   }
 }
 
@@ -81,3 +127,48 @@
   }
 
 }
+
+/* Paragraph (p)  p.subtitle */
+@mixin subtitle($type: 's700') {
+  color: $shiny-primary;
+  text-transform: uppercase;
+
+
+  @if $type=='b400' {
+    font-weight: 400;
+    font-size: 1.1rem
+  }
+
+  @else if $type=='s700' {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+}
+
+//* Paragraph (p)  */
+@mixin paragraph($type: 'dark') {
+  font-size: 1.1rem;
+  font-weight: 300;
+
+
+  @if $type=='light' {
+    color: $bg-200;
+  }
+
+  @else if $type=='dark' {
+    color: $bg-300;
+  }
+}
+
+/* Card */
+@mixin card($type: 'default') {
+  border:none;
+  border-radius: 10px;
+  height: 100%;
+
+  @if $type== 'light' {
+    background-color: $bg-100;
+  }
+}
+

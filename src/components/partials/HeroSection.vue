@@ -63,9 +63,7 @@ export default {
 .container-xl {
   height: $hero-height;
   p {
-    text-transform: uppercase;
-    color: $shiny-primary;
-    font-size: 1.1rem;
+    @include subtitle(b400)
   }
   h1{
     font-weight: 900;
