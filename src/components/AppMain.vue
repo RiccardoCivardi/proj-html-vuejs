@@ -1,11 +1,12 @@
 <script>
 
-/* Import components: AboutNetwork, BusinessArea, ProcessManagement, TeamSection */
+/* Import components: AboutNetwork, BusinessArea, ProcessManagement, TeamSection, NewsletterForm */
 import AboutNetwork from './partials/AboutNetwork.vue';
 import BusinessArea from './partials/BusinessArea.vue';
 import ProcessManagement from './partials/ProcessManagement.vue';
 import TeamSection from './partials/TeamSection.vue';
 import EditorialContent from './partials/EditorialContent.vue';
+import NewsletterForm from './partials/NewsletterForm.vue'
 
 export default {
 
@@ -17,7 +18,8 @@ export default {
     BusinessArea,
     ProcessManagement,
     TeamSection,
-    EditorialContent
+    EditorialContent,
+    NewsletterForm
 
   }
 
@@ -38,6 +40,8 @@ export default {
     <TeamSection/>
 
     <EditorialContent/>
+
+    <NewsletterForm/>
 
   </main>
   

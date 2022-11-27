@@ -71,20 +71,7 @@ export default {
     font-size: 80px;
   }
   input, select {
-    width: 100%;
-    height: 48px;
-    background-color: $grey;
-    font-size: 1.1rem;
-    padding-left: 15px,
-  }
-  input{
-    border: none;
-    border-radius: 5px;
-    color: $bg-400;
-    &::placeholder {
-      font-weight: 300;
-      letter-spacing: 0.1rem;
-    }
+  @include input();
   }
   select {
     font-weight: 300;
@@ -96,7 +83,6 @@ export default {
     @include button(outline);
   }
   
-
 }
 
 </style>
