@@ -1,9 +1,10 @@
 <script>
 
-/* Import components: AboutNetwork, BusinessArea, ProcessManagement */
+/* Import components: AboutNetwork, BusinessArea, ProcessManagement, TeamSection */
 import AboutNetwork from './partials/AboutNetwork.vue';
 import BusinessArea from './partials/BusinessArea.vue';
 import ProcessManagement from './partials/ProcessManagement.vue';
+import TeamSection from './partials/TeamSection.vue';
 
 
 
@@ -15,7 +16,8 @@ export default {
 
     AboutNetwork,
     BusinessArea,
-    ProcessManagement
+    ProcessManagement,
+    TeamSection
 
   }
 
@@ -32,6 +34,8 @@ export default {
     <BusinessArea/>
 
     <ProcessManagement/>
+
+    <TeamSection/>
 
   </main>
   
