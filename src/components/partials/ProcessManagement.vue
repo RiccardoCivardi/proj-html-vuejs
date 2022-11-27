@@ -39,10 +39,11 @@ export default {
 
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="container-xxl">
 
-        <div class="row row-cols-1 g-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 ">
+        <!-- How it should be displayed on small screens???? -->
+        <div class="row row-cols-1 g-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 ">
 
           <ManagementCard v-for="(item, index) in processManagement" :key="index" :item="item"/>
 
@@ -51,10 +52,6 @@ export default {
       </div>
     </div>
 
-    
-
-      
-   
   </section>
   
 </template>
@@ -70,18 +67,28 @@ export default {
  @include section(light100);
  .container-custom {
   max-width: 700px;
-  .subtitle {
+    .subtitle {
     @include subtitle;
-  }
-  h2{
+    }
+    h2{
     @include title(dark);
-  }
-  
-  p{
+    }
+    p{
     @include paragraph(dark);
+    }
   }
- }
-  
+  .box{
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 2000px;
+      height: 5px;
+      background-color: $dark-rgba-primary;
+      position: absolute;
+      top: 33px;
+    }
+  }
 }
 
 </style>

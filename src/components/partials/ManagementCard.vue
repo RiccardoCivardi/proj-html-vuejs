@@ -18,7 +18,7 @@ export default {
 
   <div class="col">
     <div class="card">
-      <p class="circle mb-4">{{item.id}}</p>
+      <p class="circle mb-4"><span>{{item.id}}</span></p>
       <h4 class="mb-4">{{item.title}}</h4>
       <p>{{item.text}}</p>
     </div>
@@ -44,9 +44,27 @@ export default {
     margin: 0 auto;
     font-weight: 700;
     border-radius: 50%;
-    background-color: $dark-rgba-primary;
+    background-color: #C5E0DF;
     color: $primary;
-
+    position: relative;
+    &::before, &::after {
+      content: '';
+      display: block;
+      width: 230px;
+      height: 5px;
+      background-color: #C5E0DF;
+      position: absolute;
+      
+    }
+    &::before {
+      width: 190px;
+      top: 17px;
+      left: 40px;
+    }
+    &::after {
+      bottom: 18px;
+      left: -230px;
+    }
   }
   h4 {
    @include titleSmall(dark);
@@ -54,7 +72,19 @@ export default {
   p {
     @include paragraph(dark);
   }
-}
 
+  .box{
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: $dark-rgba-primary;
+      position: absolute;
+      top: 57px;
+    }
+  }
+}
 
 </style>
