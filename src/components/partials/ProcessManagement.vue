@@ -1,25 +1,25 @@
 <script>
 
 /* Import data */
-import businessArea from '../../data/partials/businessArea';
+import processManagement from '../../data/partials/processManagement';
 
 /* Import componets: BussinessCard */
-import BusinessCard from './BusinessCard.vue'
+import ManagementCard from './ManagementCard.vue';
 
 export default {
 
-  name: 'BusinessArea',
+  name: 'ProcessManagement',
 
   components: {
 
-    BusinessCard
+    ManagementCard
 
   },
 
   data(){
     return{
 
-      businessArea
+      processManagement
 
     }
   }
@@ -31,33 +31,30 @@ export default {
 <template>
 
   <section class="section-wrapper">
-    <div class="container-xl">
-      <div class="row">
+    <div class="container-custom mx-auto text-center px-2">
+      
+      <p class="subtitle mb-4">How it works in practice</p>
+      <h2 class="mb-4"><span>Process</span> Management</h2>
+      <p class="mb-4">We work with innovative methodologies to ensure that the entire reformatting process is done from start to finish as planned.</p>
 
-        <div class="col-12">
+    </div>
 
-          <p class="subtitle mb-4">Our business areas</p>
-          <h2 class="mb-4">Excellence in <span>Services</span></h2>
+    <div class="container-fluid">
+      <div class="container-xxl">
 
-          <div class="row">
-            <div class="col-12 col-md-9">
-              <p class="mb-4">We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals.These are some options that you can hire.</p>
-            </div>
-            <div class="col-4 col-md-3 text-md-end">
-              <a href="#" class="button btn btn-primary">See All</a>
-            </div>
-          </div>
+        <div class="row row-cols-1 g-4 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 ">
 
-        </div>
-
-        <div class="row row-cols-1 g-4 row-cols-md-2 row-cols-lg-3">
-
-          <BusinessCard v-for="(item, index) in businessArea" :key="index" :item="item"/>
+          <ManagementCard v-for="(item, index) in processManagement" :key="index" :item="item"/>
 
         </div>
 
       </div>
     </div>
+
+    
+
+      
+   
   </section>
   
 </template>
@@ -70,8 +67,9 @@ export default {
 @use '../../style/partials/mixin' as *;
 
 .section-wrapper{
-  padding: 130px 0;
-  background-color: $bg-200;
+ @include section(light100);
+ .container-custom {
+  max-width: 700px;
   .subtitle {
     @include subtitle;
   }
@@ -82,9 +80,8 @@ export default {
   p{
     @include paragraph(dark);
   }
-  .button {
-   @include button(solid);
-  }
+ }
+  
 }
 
 </style>

@@ -55,8 +55,12 @@
 @mixin section($type: 'dark') {
   padding: 130px 0;
 
-  @if $type== 'light' {
+  @if $type== 'light100' {
+    background-color: $bg-100;
+  }
 
+  @if $type== 'light200' {
+    background-color: $bg-200;
   }
 
   @else if $type== 'dark' {

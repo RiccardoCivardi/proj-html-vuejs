@@ -22,7 +22,7 @@ export default {
 <template>
 
   <section class="section-wrapper">
-    <div class="container-xl">
+    <div class="container-xl mx-auto">
       <div class="row">
 
         <div class="col-12 col-md-6">

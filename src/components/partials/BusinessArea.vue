@@ -31,7 +31,7 @@ export default {
 <template>
 
   <section class="section-wrapper">
-    <div class="container-xl">
+    <div class="container-xl mx-auto">
       <div class="row">
 
         <div class="col-12">
@@ -50,7 +50,7 @@ export default {
 
         </div>
 
-        <div class="row row-cols-1 g-4 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 g-4 row-cols-md-2 row-cols-lg-3 mx-auto">
 
           <BusinessCard v-for="(item, index) in businessArea" :key="index" :item="item"/>
 
@@ -70,8 +70,7 @@ export default {
 @use '../../style/partials/mixin' as *;
 
 .section-wrapper{
-  padding: 130px 0;
-  background-color: $bg-200;
+  @include section(light200);
   .subtitle {
     @include subtitle;
   }
