@@ -77,18 +77,6 @@ export default {
     @include paragraph(dark);
     }
   }
-  .box{
-    position: relative;
-    &::before {
-      content: '';
-      display: block;
-      width: 2000px;
-      height: 5px;
-      background-color: $dark-rgba-primary;
-      position: absolute;
-      top: 33px;
-    }
-  }
 }
 
 </style>

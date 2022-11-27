@@ -16,8 +16,8 @@ export default {
 
 <template>
 
-  <div class="col">
-    <div class="card">
+  <div class="col p-0">
+    <div class="card ">
       <p class="circle mb-4"><span>{{item.id}}</span></p>
       <h4 class="mb-4">{{item.title}}</h4>
       <p>{{item.text}}</p>
@@ -50,20 +50,19 @@ export default {
     &::before, &::after {
       content: '';
       display: block;
-      width: 230px;
+      width: 200px;
       height: 5px;
       background-color: #C5E0DF;
       position: absolute;
+      top: 17px;
       
     }
     &::before {
-      width: 190px;
-      top: 17px;
-      left: 40px;
+      left: -200px;
+      
     }
     &::after {
-      bottom: 18px;
-      left: -230px;
+      left: 40px;
     }
   }
   h4 {
@@ -73,18 +72,6 @@ export default {
     @include paragraph(dark);
   }
 
-  .box{
-    position: relative;
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 5px;
-      background-color: $dark-rgba-primary;
-      position: absolute;
-      top: 57px;
-    }
-  }
 }
 
 </style>
