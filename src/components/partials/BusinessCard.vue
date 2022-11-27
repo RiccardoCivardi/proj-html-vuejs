@@ -17,7 +17,7 @@ export default {
 <template>
 
   <div class="col">
-    <div class="card p-5">
+    <div class="card">
       <div class="d-flex justify-content-between mb-4">
         <i class="main-i fa-solid" :class="`fa-${item.className}`"></i>
         <a :href="item.href">

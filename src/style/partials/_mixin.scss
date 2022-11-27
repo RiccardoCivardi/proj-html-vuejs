@@ -166,6 +166,7 @@
   border:none;
   border-radius: 10px;
   height: 100%;
+  padding: 3rem;
 
   @if $type== 'light' {
     background-color: $bg-100;
