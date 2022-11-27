@@ -5,8 +5,7 @@ import AboutNetwork from './partials/AboutNetwork.vue';
 import BusinessArea from './partials/BusinessArea.vue';
 import ProcessManagement from './partials/ProcessManagement.vue';
 import TeamSection from './partials/TeamSection.vue';
-
-
+import EditorialContent from './partials/EditorialContent.vue';
 
 export default {
 
@@ -17,7 +16,8 @@ export default {
     AboutNetwork,
     BusinessArea,
     ProcessManagement,
-    TeamSection
+    TeamSection,
+    EditorialContent
 
   }
 
@@ -36,6 +36,8 @@ export default {
     <ProcessManagement/>
 
     <TeamSection/>
+
+    <EditorialContent/>
 
   </main>
   

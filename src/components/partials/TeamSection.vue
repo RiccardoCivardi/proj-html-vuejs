@@ -100,7 +100,7 @@ export default {
   @include paragraph(light);
  }
  .image {
-  width: 110px;
+  width: 120px;
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
