@@ -31,6 +31,7 @@ $di-serria: #dc945c;
 
 /* Custum color */
 $custom-blue: #21333F;
+$custom-dark: #19191F;
 
 
 /***** App colors *****/
@@ -45,6 +46,7 @@ $bg-500: darken($woodsmoke, 2%);
 
 $grey: tint-color($edward, 30%);
 $dark-grey: tint-color($edward, 15%);
+$very-dark-gray: $custom-dark;
 
 
 /*** Main color (greens) ***/
